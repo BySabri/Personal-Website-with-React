@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+  
+ul {
+    width: 100%;
+    position: absolute; 
+    z-index: 1;
+    opacity: 0.8;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+  
+li {
+    
+    margin: 5px 10px;
+    display: inline-block;
+    list-style: none;
+    vertical-align: center;
+}
+  
+button {
+    font-size: medium;
+    border: 0;
+    border-radius: 40px;
+    padding: 5px;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    color:white;
+    background-color: rgb(24, 24, 24);
+    cursor: pointer;
+}
+  
+.img {
+    vertical-align: middle;
+}
+
+.bg {
+    
+    background-image: url(./Home/website-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+.body{
+
+    height: 100%;
+
+}
+
+.body-text {
+    font-family: 'Kalnia', serif;
+    color: #EEEEEE;
+    display: flex;
+    height: 100%;
+    margin-left: 40px;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.body-text h3,h2 {
+    font-family: 'Kalnia', serif;
+}
