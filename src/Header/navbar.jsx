@@ -8,19 +8,19 @@ export default function Navbar(){
     return(
       
         <>
-            <header className="bg">
+            <header id="home" className="bg">
                 <ul style={{position:"fixed"}}>
                     <li className="img">
                         <img src={logo} alt="Logo" width="70px" />
                     </li>
                     <li>
-                        <button style={styles.buttonStyle}>Home</button>
+                       <a href="#home">Home</a>
                     </li>
                     <li>
-                        <button style={styles.buttonStyle}>About</button>
+                       <a href="#body">About</a>
                     </li>
                     <li>
-                        <button style={styles.buttonStyle}>Contact</button>
+                       <a href="#footer">Contact</a>
                     </li>
                 </ul>
                     <div className="body">

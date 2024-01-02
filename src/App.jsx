@@ -1,6 +1,6 @@
 
 import Navbar from './Header/navbar';
-import Body from './Home/body';
+import Body from './About/body';
 import Footer from './Footer/footer';
 function App() {
  

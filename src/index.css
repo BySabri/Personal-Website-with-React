@@ -4,6 +4,8 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    color-scheme: light dark;
+    scroll-behavior: smooth;
 }
   
 ul {
@@ -24,37 +26,51 @@ li {
     vertical-align: center;
 }
   
-button {
-    font-size: medium;
+a {
+    font-size: x-large;
     border: 0;
-    border-radius: 40px;
-    padding: 5px;
-    width: 80px;
-    height: 40px;
+    margin-left: 20px;
     cursor: pointer;
     background-color: black;
     color: white;
+    text-decoration: none;
+    position: relative;
+    
 }
 
-button:hover {
-    color:white;
-    background-color: rgb(24, 24, 24);
-    cursor: pointer;
+li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
   
+li a:hover::before {
+    width: 100%;
+    left: 0;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
 .img {
     vertical-align: middle;
 }
 
 .bg {
     
-    background-image: url(./Home/website-bg.png);
+    background-image: url(./About/website-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     color: #fff;
     position: relative;
+    -webkit-box-shadow:0px 0px 20px 0px rgba(186,186,186,0.52);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(186,186,186,0.52);
+    box-shadow: 0px 0px 20px 0px rgba(186,186,186,0.52);
 }
 
 .body{
